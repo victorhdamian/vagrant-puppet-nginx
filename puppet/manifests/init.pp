@@ -1,4 +1,1 @@
-::puppet
-package {"nginx":
-    ensure => present,
-}
+class { 'nginx': }
