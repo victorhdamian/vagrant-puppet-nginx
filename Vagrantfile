@@ -6,24 +6,24 @@
 
 Vagrant.configure("2") do |config|
 
-  config.vm.define "CentOSnginx" do |aCentOSnginx|
-    aCentOSnginx.vm.box = "CentOSnginx"	
-    aCentOSnginx.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/centos-64-x64-vbox4210.box"
+  config.vm.define "CentOSnginx" do |nc|
+    nc.vm.box = "CentOSnginx"	
+    nc.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/centos-64-x64-vbox4210.box"
   end
 
-  config.vm.define "Fedoranginx" do |Fedoranginx|
-    Fedoranginx.vm.box = "Fedoranginx"
-    Fedoranginx.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/fedora-18-x64-vbox4210.box"
+  config.vm.define "Fedoranginx" do |nf|
+    nf.vm.box = "Fedoranginx"
+    nf.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/fedora-18-x64-vbox4210.box"
   end
 
-  config.vm.define "Debiannginx" do |Debiannginx|
-    Debiannginx.vm.box = "Debiannginx"
-    Debiannginx.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/debian-607-x64-vbox4210.box"
+  config.vm.define "Debiannginx" do |nd|
+    nd.vm.box = "Debiannginx"
+    nd.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/debian-607-x64-vbox4210.box"
   end
 
-  config.vm.define "Ubuntunginx" do |Ubuntunginx|
-    Ubuntunginx.vm.box = "Ubuntunginx"
-    Ubuntunginx.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/ubuntu-server-10044-x64-vbox4210.box"
+  config.vm.define "Ubuntunginx" do |nu|
+    nu.vm.box = "Ubuntunginx"
+    nu.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/ubuntu-server-10044-x64-vbox4210.box"
   end
 
   config.vm.provision :puppet do |puppet|
