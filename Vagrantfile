@@ -6,9 +6,9 @@
 
 Vagrant.configure("2") do |config|
 
-  config.vm.define "CentOSnginx" do |CentOSnginx|
-    CentOSnginx.vm.box = "CentOSnginx"	
-    CentOSnginx.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/centos-64-x64-vbox4210.box"
+  config.vm.define "CentOSnginx" do |aCentOSnginx|
+    aCentOSnginx.vm.box = "CentOSnginx"	
+    aCentOSnginx.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/centos-64-x64-vbox4210.box"
   end
 
   config.vm.define "Fedoranginx" do |Fedoranginx|
