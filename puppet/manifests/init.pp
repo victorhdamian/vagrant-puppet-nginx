@@ -1,4 +1,5 @@
 $full_web_path = '/var/www'
+class { 'nginx': }
 define web::nginx_ssl_with_redirect (
  $backend_port         = 9000,
  $php                  = true,
