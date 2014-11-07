@@ -1,5 +1,10 @@
 $full_web_path = '/var/www'
 class { 'nginx': }
+
+nginx::resource::vhost { 'www.puppetlabs.com':
+  www_root => '/var/www/',
+}
+
 define web::nginx_ssl_with_redirect (
  $backend_port         = 9000,
  $php                  = true,
