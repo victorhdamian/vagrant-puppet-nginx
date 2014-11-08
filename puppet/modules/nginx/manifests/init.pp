@@ -34,7 +34,7 @@ class nginx (
   $proxy_set_header   = $nginx::params::nx_proxy_set_header,
   $confd_purge        = $nginx::params::nx_confd_purge,
   $configtest_enable  = $nginx::params::nx_configtest_enable,
-  $service_restart    = $nginx::params::nx_service_restrart
+  $service_restart    = $nginx::params::nx_service_restart
 ) inherits nginx::params {
   
   warning('This module is no longer supported and we direct you to our upstream source, http://forge.puppetlabs.com/jfryman/nginx')
