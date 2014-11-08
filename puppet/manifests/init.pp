@@ -1,8 +1,5 @@
 class { "nginx": }
-nginx::resource::vhost { 'default':
-    ensure   => present,
-    www_root => '/var/www/nginx-default',
-    ssl      => 'true',
-    ssl_cert => '/tmp/server.crt',
-    ssl_key  => '/tmp/server.pem',
-}
+#todo
+#enable default site
+#edit index.html
+#<meta http-equiv="refresh" content="0; url=https://github.com/puppetlabs/exercise-webpage" />
