@@ -1,5 +1,5 @@
 class { "nginx": }
-nginx::resource::vhost { 'test2.local':
+nginx::resource::vhost { 'default':
     ensure   => present,
     www_root => '/var/www/nginx-default',
     ssl      => 'true',
