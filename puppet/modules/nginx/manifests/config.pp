@@ -56,7 +56,7 @@ class nginx::config(
   }
 
   file { '/etc/nginx/sites-enabled/default':
-    ensure => absent,
+    ensure => present,
   }
 
   file { "${nginx::params::nx_conf_dir}/nginx.conf":
