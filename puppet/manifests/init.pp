@@ -1,6 +1,4 @@
 class { "nginx": } ->
-#todo
-#enable default site
 file { '/var/www/nginx-default/index.html':
   replace => "yes",
   ensure  => file,
