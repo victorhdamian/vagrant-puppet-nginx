@@ -42,11 +42,11 @@
 define nginx::resource::vhost(
   $ensure                 = 'enable',
   $listen_ip              = '*',
-  $listen_port            = '80',
+  $listen_port            = '8000',
   $listen_options         = undef,
   $ipv6_enable            = false,
   $ipv6_listen_ip         = '::',
-  $ipv6_listen_port       = '80',
+  $ipv6_listen_port       = '8000',
   $ipv6_listen_options    = 'default',
   $ssl                    = false,
   $ssl_cert               = undef,
