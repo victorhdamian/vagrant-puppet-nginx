@@ -2,9 +2,9 @@ class { "nginx": } ->
 
 #TODO
 #support for 
-#  'Fedora': {} 
-#  'CentOS': {}
-#  'Debian': {} 
+#  'Fedora': {} root 
+#  'CentOS': {} root /usr/share/nginx/html
+#  'Debian': {} root /var/www;
 #  'Redhat': {}
 #   default: {} 
 
